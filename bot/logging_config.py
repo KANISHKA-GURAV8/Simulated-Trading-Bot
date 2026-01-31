@@ -6,7 +6,7 @@ LOG_FILE=os.path.join(LOG_DIR,"trading_bot.log")
 
 def setup_logger():
     if not os.path.exists(LOG_DIR):
-        os.makdirs(LOG_DIR)
+        os.makedirs(LOG_DIR)
 
     logger=logging.getLogger("trading_bot")
     logger.setLevel(logging.INFO)
