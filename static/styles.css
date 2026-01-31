@@ -1,0 +1,111 @@
+/* Professional styles for Trading Bot demo */
+:root{
+  --primary:#2463eb;
+  --muted:#6c757d;
+  --bg:#f8f9fa;
+  --card:#ffffff;
+  --radius:12px;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+body{
+    font-family:Inter,
+    system-ui, -apple-system,
+    'Segoe UI', Roboto, 
+    'Helvetica Neue', Arial; background:var(--bg); color:#222}
+
+.navbar .logo{
+    width:40px;
+    height:40px;
+    font-weight:700
+}
+
+.hero{
+    background:linear-gradient(90deg, rgba(36,99,235,0.9), rgba(61,139,255,0.85)), url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=3b0c3c') center/cover no-repeat;
+}
+
+.hero .lead{
+    opacity:0.95
+}
+
+.hero-card{
+    border-radius:16px; 
+    overflow:hidden;
+    margin-top:40px;
+}
+
+.bg-gradient{
+    color:#fff
+}
+
+.feature i{
+    width:56px;
+    height:56px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:12px;
+    background:linear-gradient(180deg, rgba(36,99,235,0.08), rgba(36,99,235,0.02));
+}
+
+.feature h5{
+    font-weight:600
+}
+
+.img-card img{
+    height:220px; 
+    object-fit:cover; 
+    width:100%; 
+    transition:transform .35s ease
+}
+
+.img-card:hover img{
+    transform:scale(1.04)
+}
+
+.card{
+    border:none
+}
+
+.btn-primary{
+    background:var(--primary);border-color:var(--primary)
+}
+
+.hero .btn-outline-light{
+    border-color:rgba(255,255,255,0.25)
+}
+
+footer a{
+    opacity:0.9
+}
+
+@media (max-width:767px){
+  .hero{padding:3rem 0}
+  .img-card img{height:180px}
+}
+
+.display-5.fw-bold {
+    color: #000 !important;
+}
+
+/* Ensure feature cards are the same height */
+.row.g-4 > .col-md-4 {
+    display: flex;
+}
+.row.g-4 > .col-md-4 > .feature {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Order form specific styles */
+.order-card .card-header h5{font-weight:600}
+.order-card .form-control-lg, .order-card .form-select-lg{padding:.75rem 1rem}
+.order-card .input-group-text{border-radius:8px;border:1px solid #e9ecef}
+.order-card .order-preview{font-family:inherit}
+.order-card .btn-primary{padding:.65rem 1rem}
+.order-card .btn-outline-secondary{padding:.65rem 1rem}
+
+.lead{
+    color:black;
+}
